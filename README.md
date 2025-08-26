@@ -7,4 +7,3 @@ Currently using SEC data for funds, total assets and 13f filings data and CUSIP-
 
 ## Current Problems
 Ammendents: Either New Holdings or Restatements, if they are restatments and have the same reporting date and ammendement number which one to use.
-**Infotable not included file too big
