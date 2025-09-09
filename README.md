@@ -7,12 +7,18 @@ Currently using SEC data for funds, total assets and 13f filings data and CUSIP-
 
 ## Current Problems
 Ammendents: Either New Holdings or Restatements, if they are restatments and have the same reporting date and ammendement number which one to use.
-Try EDGAR API and get time for restatement.
-Pitential Priority: If New Holdings and ammend number is the same add all, if restatements: Take highest ammend number, if missing or multiple take the highest shares number. (Highest ammend number will obviously take priority)
+
+Try EDGAR API and get time for restatement. Don't have access.
+
+Pitential Priority: 
+1. Higher index number for restatements and NaN Ammendement types.
+2. If New Holdings and ammend number is the same add all, if restatements: Take highest ammend number, if missing or multiple take the highest shares number. (Highest ammend number will obviously take priority)
+
+For calculating expected returns: AR1, FF4.
 
 ## Next Potential Steps
 1. Implement the potential solution above
 2. Clean notebook
 3. Merge stock data and identify passive funds
-4. Get events data
+4. Get events data 
 5. Analysis
