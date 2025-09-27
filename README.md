@@ -3,22 +3,13 @@
 Research question: How has passive investing affected stock responsiveness to news.
 
 ## Data
-Currently using SEC data for funds, total assets and 13f filings data and CUSIP-ticker data from yoshishima's github. Only used 13f filings data from 2025 March April May will add more quarters once resolve problems. With CRSP data will not need CUSIP-ticker data so will change code and drop that dataset.
+Using CRSP data to identify index funds, LSEG data to get funds' stock holdings, CRSP data for stock returns, LSEG IBES data for earnings dates.
 
 ## Current Problems
-Ammendents: Either New Holdings or Restatements, if they are restatments and have the same reporting date and ammendement number which one to use.
-
-Try EDGAR API and get time for restatement. Don't have access.
-
-Pitential Priority: 
-1. Higher index number for restatements and NaN Ammendement types.
-2. If New Holdings and ammend number is the same add all, if restatements: Take highest ammend number, if missing or multiple take the highest shares number. (Highest ammend number will obviously take priority)
-
-For calculating expected returns: AR1, FF4.
+Didn't get the right column to merge LSEG and CRSP funds data.
 
 ## Next Potential Steps
-1. Implement the potential solution above
-2. Clean notebook
-3. Merge stock data and identify passive funds
-4. Get events data 
-5. Analysis
+1. Merge the datasets and compute passive share for each stock
+2. Clean notebook, get rid of initial_stuff and 13f data
+3. Merge stock data and change date formats to days from/to earinings.
+5. Analysis Stock by stock high vs low passive ownership hidh vs low median, daily volatility etc.
