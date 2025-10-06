@@ -1,3 +1,9 @@
 Data/monthly_stock.dta
 Data/CRSP_fund.xlsx
-Data/LSEG_fund.csv
+Data/LSEG_fund.dta
+Data/LSEG_earnings.xlsx
+Data/CRSP_WFICN.xlsx
+Data/FUNDO_WFICN.dta
+Data/daily_stock.dta
+Data/passive_22.csv
+Data/passive_23.csv
