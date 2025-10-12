@@ -11,3 +11,4 @@ Using CRSP data to identify index funds, LSEG data to get funds' stock holdings,
 ## Next Potential Steps
 1. Analysis stock by stock high vs low passive ownership high vs low median, daily volatility etc.
 2. IV?
+3. Look into charecteristics
