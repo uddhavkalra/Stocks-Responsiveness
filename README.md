@@ -3,12 +3,9 @@
 Research question: How has passive investing affected stock responsiveness to news.
 
 ## Data
-Using CRSP data to identify index funds, LSEG data to get funds' stock holdings, CRSP data for stock returns, LSEG IBES data for earnings dates.
+Using CRSP data to identify index funds, LSEG data to get funds' stock holdings, CRSP data for stock returns, LSEG IBES data for earnings dates, WRTS for mergings codes, Compustat for fundamnetals, wikipedia for s&p.
 
 ## Current Problems
 
-
-## Next Potential Steps
-1. Analysis stock by stock high vs low passive ownership high vs low median, daily volatility etc.
-2. IV?
-3. Look into charecteristics
+## Next Steps
+1. Robustness

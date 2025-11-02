@@ -7,4 +7,8 @@ Data/daily_stock.dta
 Data/passive_21.csv
 Data/master_data_es.csv
 Data/master_data_pj.csv
-Data/segment_data.dta
+Data/fundamentals.dta
+Data/master_data_iv.csv
+Data/master_data_es_controls.csv
+Data/master_data_pj_controls.csv
+Data/master_data_iv_controls.csv
