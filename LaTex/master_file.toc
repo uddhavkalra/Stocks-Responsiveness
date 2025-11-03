@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Literature Review}{4}{}%
+\contentsline {section}{\numberline {3}Data Description}{4}{}%
+\contentsline {section}{\numberline {4}Empirical Model}{4}{}%
+\contentsline {section}{\numberline {5}Results}{4}{}%
+\contentsline {section}{\numberline {6}Discussion}{4}{}%
+\contentsline {section}{\numberline {7}Conclusion}{4}{}%
+\contentsline {section}{\numberline {8}References}{4}{}%
+\contentsline {section}{\numberline {9}Tables \& Figures}{5}{}%
