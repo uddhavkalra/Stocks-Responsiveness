@@ -15,21 +15,37 @@
 \usepackage{indentfirst}
 \usepackage[bottom]{footmisc}
 
-\setstretch{1.5}
 
 \begin{document}
-Passive investing has grown significantly over the past decade, surpassing Active investing in equities. It is important to discuss what passive investing is beforehand, as it could be argued that no one is a passive investor as everyone makes the active decision to invest.
+John Bogle, the founder of Vanguard, introduced the first index fund in 1976, which tracked the S\&P 500. Subsequently, in 1993, the first US listed exchange traded fund (ETF) called SPDR, which also tracked the S\&P 500, made its debut. These innovations democratised investing, making equity markets accessible to investors who were previously inaccessible. 
+
+These instruments have gained popularity since their launch; there are an estimated 12000 ETFs worldwide in 2024 (Investopedia). As assets under management of the ETFs have grown, they have reshaped trading behaviours and market structure. Two of the biggest strategies that grew as a result of the popularity of these instruments are riskless arbitrage of the ETF and Passive investing.
+
+Passive investing has grown significantly over the past decade, surpassing Active investing in equities. It is important to discuss what passive investing is beforehand, as it could be argued that no one is a passive investor, as everyone makes an active decision to invest.
 
 Passive investing has two primary definitions:
 \begin{itemize}
-\item[a.] Passive investors choose a portfolio, buy it and hold it long-term with no regard for profiting from short term variations or frequent trading. (Moltke \& Sl\o k, 2024)
-\item[b.] A passive investor holds every security from the market, with each represented in the same manner as in the market. (Sharpe, 1991)
+\item[a.] Passive investors choose a portfolio, buy it, and hold it long-term with no regard for profiting from short term variations or frequent trading. (Moltke \& Sl\o k, 2024)
+\item[b.] A passive investor holds every security in the market, with each represented in the same manner as in the market. (Sharpe, 1991)
 \end{itemize}
 For the purposes of this paper, we will adopt Sharpe's definition. 
 
-Recently Total Assets in Index Funds overtook Total Assets in Non-Index Funds. Figures 1 and 2 illustrate this development showing the level and share of assets.
+Recently, Total Assets in Index Funds overtook Total Assets in Non-Index Funds. Figures 1 and 2 illustrate this development, showing the level and share of assets.
 
-Haddad, Huebner and Loualiche (2024), show through their model that an increase in the share of passive investing leads to lower price elasticities of demand which can lead to higher volatility, lower efficiency and illiquidity. If stocks become less responsive to trading demand, they may also adjust differently to new information.
+Haddad, Huebner and Loualiche (2024) show through their model that an increase in the share of passive investing leads to lower price elasticities of demand, which can lead to higher volatility, lower efficiency and illiquidity. If stocks become less responsive to trading demand, they may also adjust differently to new information. Price informativeness reflects how well prices incorporate firm specific information. A decline in informativeness implies that capital may be misallocated and that prices respond less to fundamentals.
 
-This motivates the research question, ``How has passive investing affected stock responsiveness to news.''
+This motivates the research question, ``How has passive investing affected the price informativeness of stocks?''
+
+In order to answer this question, we use price volatility around the earnings date as a proxy of price informativeness. The biggest issue of using volatility as a measure of price informativeness is that there are other confounding factors that could lead to changes in volatility. However, this issue is minimized in our case as we focus on a relatively small window around the earning dates. 
+
+Volatility can serve as a good measure within this small window, as we'd expect during the pre-earnings periods, investors to revise estimates based on partial information such as management guidance, analyst revisions, or private signals. In the post-earnings period, if there is an unexpected earnings beat or miss, we expect high volatility for a few days, followed by reduced volatility as uncertainty subsides.
+
+My hypothesis is that high passive ownership leads to lower volatility in the pre-earnings period and much higher volatility after the earnings announcement, thus implying lower price informativeness for the stock.
+
+We will focus on a small window around the earnings date, from 30 days prior to 15 days after. This naturally leads me to use an event study model to analyse the effects of passive investing. There are concerns of endogeneity, such as omitted variable bias and simultaneous causality. To mitigate these concerns, we add fixed effects to the model and run a two-stage least squares model with inclusion in the S\&P 500 as the instrument. 
+
+The S\&P 500 is the most popular index, and so inclusion in the index naturally leads to higher passive ownership. This is true in the sample as well; the median stock in the S\&P 500 has a 30.29\% passive ownership share while the median stock not in the S\&P 500 has a 10.75\% passive ownership share. This motivates the relevance of the instrument. Inclusion into the index is driven by rules unrelated to volatility. Inclusion in the S\&P 500 is not random; however, conditional on firm size and other observables, residual variation in index membership is  exogenous to firm level volatility.
+
+Section 2 reviews the literature. Section 3 describes the data and variables. Section 4 outlines the empirical model. Section 5 presents results, and Section 6 concludes.
+
 \end{document}

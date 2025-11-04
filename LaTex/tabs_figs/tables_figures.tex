@@ -13,8 +13,12 @@
 \usepackage{tablefootnote}
 \usepackage{indentfirst}
 \usepackage[bottom]{footmisc}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
+
+\subsection{Figures}
 
 \begin{figure}[H]
 \begin{center}
@@ -30,5 +34,49 @@
 \caption{Index vs Non-Index Funds Share of Assets}
 \end{figure}
 \vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/3vol_4q.png}
+\end{center}
+\caption{3 Day Volatility Trends}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/5vol_4q.png}
+\end{center}
+\caption{5 Day Volatility Trends}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/7vol_4q.png}
+\end{center}
+\caption{7 Day Volatility Trends}
+\end{figure}
+\vspace{-0.25cm}
+
+\subsection{Tables}
+
+\begin{table}[H]
+\centering
+\caption{Summary Statistics}
+\begin{tabular}{lccccc}
+\toprule
+Variable & Obs & Mean & Std. Dev. & Min & Max \\
+\midrule
+Price & 393682 & 60.0527 & 171.4807 & 0.0201 & 8382.63 \\
+Return & 393682 & -0.0003 & 0.0459 & -0.8042 & 5.3827 \\
+Passive & 393682 & 0.1402 & 0.1228 & 0.0 & 0.9394 \\
+3 Day Volatility & 393682 & 1.0565 & 3.5338 & 0.0 & 374.6247 \\
+5 Day Volatility & 393682 & 1.3706 & 4.2897 & 0.0 & 355.7887	 \\
+7 Day Volatility & 393682 & 1.6234 & 4.9856 & 0.0005 & 355.4092 \\
+\bottomrule
+\end{tabular}
+\label{tab:sumstats}
+\end{table}
 
 \end{document}
