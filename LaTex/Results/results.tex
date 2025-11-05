@@ -1,0 +1,38 @@
+\documentclass[/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/LaTex/master_file.tex]{article}
+\usepackage[a4paper, margin=0.75in]{geometry}
+\usepackage{setspace}    
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}          
+\usepackage{mathtools} 
+
+\begin{document}
+
+\subsection{Results}
+
+Figures 6-8 show the results for the event study without entity fixed effects. Figure 6 shows that our hypothesis for 3 day volatility holds true; the coefficients of the interaction terms are negative before the announcement date and are positive immediately after the announcement, while the coefficients of the time dummies are 0 in the pre-announcement period and positive, but small, in the post-announcement period. On the announcement day, the coefficient of the interaction term is 3.5733 while that of the time dummy is 0.3168. Figures 7 and 8 follow the same pattern for the post-announcement periods; however, during the pre-announcement periods, the coefficients of the interaction terms are not statistically significant. This could be due to omitted variables bias; to account for this, we also use the fixed effects model.
+
+Figures 9-11 show the results for the event study with entity fixed effects. We drop sector controls as those are absorbed by the fixed effects. Our results for 3 day volatility do not change. However, 5 and 7 day volatility now show the same pre-announcement pattern as 3 day volatility, further validating the results. 
+
+Table 2 provides the coefficient for Passive Share and selected time and interaction coefficients in these models. We can interpret the coefficients as follows: a 1\% increase in share passively owned is correlated with a $(\delta + \gamma_k) \cdot 0.01$ unit change in volatility on day $k$ relative to day -1, where $\delta$ is the coefficient of Share Passive and $\gamma_k$ is the coefficient of the interaction term on day $k$. For example, from column 2, a 1\% increase in share passively owned is correlated with a 0.041 units increase in 3 day volatility on earnings day relative to a day prior.
+
+We cannot draw any causal implications from the fixed effects event study model, as simultaneous causality could be a source of endogeneity. To combat this, we use inclusion in the S\&P 500 as an instrument. Table 3 provides the results of the first stage regression. As we can see, the coefficient for the instrument is statistically significant and so is relevant. 
+
+Figures 12-14 show the results for the event study with entity fixed effects and with Share Passive replaced by $\widehat{\text{Share Passive}}$. Our results visually do not change from the results of the fixed effects model; however, now our coefficients have a causal interpretation, under the exclusion restriction that S\&P 500 inclusion affects volatility only through passive ownership. 
+
+Table 4 provides the coefficient for Passive Share and selected time and interaction coefficients in the second stage. We can now interpret the coefficients as follows: a 1\% increase in share passively owned causes a $(\delta + \gamma_k) \cdot 0.01$ unit change in volatility on day $k$ relative to day -1, where $\delta$ is the coefficient of Share Passive and $\gamma_k$ is the coefficient of the interaction term on day $k$. For example, from column 1, a 1\% increase in share passively owned causes a 0.159 unit increase in 3 day volatility on earnings day relative to a day prior.
+
+The consistency of the results across 3, 5, and 7 day volatility measures reinforces the robustness of the finding that passive ownership dampens pre-announcement and amplifies post-announcement volatility.
+
+\subsection{Discussion}
+
+As discussed earlier, from Table 4 column 1, a 1\% increase in share passively owned causes a 0.159 unit increase in 3 day volatility on earnings day relative to a day prior, for 5 day volatility, the effect is 0.143 unit and for 7 day volatility is 0.139 unit. Although the estimated magnitudes appear modest at the percentage point level, they become economically significant given the substantial rise in passive ownership over recent years. Moreover, given that the mean of 3 day volatility is 1.0662, 0.159 represents approximately 15\% of the mean. 
+
+These results contribute to the growing literature suggesting that the expansion of passive investing may impair price discovery. Reduced price informativeness could, in turn, influence capital allocation efficiency and the responsiveness of equity markets to firm specific news.
+
+These results suggest that an increase in the share of passive ownership does lead to lower price informativeness. Although this paper focuses on the magnitude and not the direction, this does provide a potential trading strategy. As passive investing rises and price informativeness drops in the lead up to the earnings, a trader could use soft information in the lead up to earnings to determine the direction of the price after earnings. Since the reaction post earnings will be elevated, they could use options contracts expiring after earnings. An interesting avenue for future research would be to examine this strategy explicitly.
+
+Overall, the findings support the hypothesis that passive ownership affects the temporal pattern of volatility around information events. The results imply that the increasing dominance of passive investing has meaningful consequences for how quickly and efficiently information is reflected in prices.
+
+\end{document}

@@ -59,6 +59,78 @@
 \end{figure}
 \vspace{-0.25cm}
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/3vol_es_cont.png}
+\end{center}
+\caption{3 Day Volatility Event Study}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/5vol_es_cont.png}
+\end{center}
+\caption{5 Day Volatility Event Study}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/7vol_es_cont.png}
+\end{center}
+\caption{7 Day Volatility Event Study}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/3vol_es_fe.png}
+\end{center}
+\caption{3 Day Volatility Event Study With Fixed Effects}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/5vol_es_fe.png}
+\end{center}
+\caption{5 Day Volatility Event Study With Fixed Effects}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/7vol_es_fe.png}
+\end{center}
+\caption{7 Day Volatility Event Study With Fixed Effects}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/3vol_es_iv.png}
+\end{center}
+\caption{3 Day Volatility Second Stage Event Study}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/5vol_es_iv.png}
+\end{center}
+\caption{5 Day Volatility Second Stage Event Study}
+\end{figure}
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/Graphs/7vol_es_iv.png}
+\end{center}
+\caption{7 Day Volatility Second Stage Event Study}
+\end{figure}
+\vspace{-0.25cm}
+
 \subsection{Tables}
 
 \begin{table}[H]
@@ -68,15 +140,114 @@
 \toprule
 Variable & Obs & Mean & Std. Dev. & Min & Max \\
 \midrule
-Price & 393682 & 60.0527 & 171.4807 & 0.0201 & 8382.63 \\
-Return & 393682 & -0.0003 & 0.0459 & -0.8042 & 5.3827 \\
-Passive & 393682 & 0.1402 & 0.1228 & 0.0 & 0.9394 \\
-3 Day Volatility & 393682 & 1.0565 & 3.5338 & 0.0 & 374.6247 \\
-5 Day Volatility & 393682 & 1.3706 & 4.2897 & 0.0 & 355.7887	 \\
-7 Day Volatility & 393682 & 1.6234 & 4.9856 & 0.0005 & 355.4092 \\
+Price & 328958 & 60.1013 & 175.9282 & 0.0201 & 8382.63 \\
+Return & 328958 & -0.0004 & 0.0468 & -0.8041 & 5.3827 \\
+Passive & 328958 & 0.1402 & 0.1218 & 0.0 & 0.9394 \\
+3 Day Volatility & 328958 & 1.0662 & 3.6552 & 0.0 & 374.6248 \\
+5 Day Volatility & 328958 & 1.3828 & 4.4345 & 0.0 & 355.7887	 \\
+7 Day Volatility & 328958 & 1.6380 & 5.1611 & 0.0005 & 355.4092 \\
 \bottomrule
 \end{tabular}
 \label{tab:sumstats}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Baseline Event Study}
+\label{tab:reg_results}
+\begin{threeparttable}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{2}{c}{3 Day Volatility} 
+ & \multicolumn{2}{c}{5 Day Volatility}
+ & \multicolumn{2}{c}{7 Day Volatility} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+\midrule
+Passive Share & 5.5958*** & 3.7643*** & 5.8749*** & 3.5394*** & 6.7007*** & 4.0647*** \\
+ & (0.666) & (0.569) & (0.808) & (0.678) & (0.942) & (0.958) \\
+Day -2 & -0.1147* & 0.0057 & -0.1418 & 0.0240 & -0.1888* & 0.0081 \\
+ & (0.069) & (0.031) & (0.092) & (0.027) & (0.109) & (0.025) \\
+Day 0 & 0.3168*** & 0.3925*** & 0.1921* & 0.2998*** & 0.1111 & 0.2393*** \\
+ & (0.093) & (0.048) & (0.101) & (0.039) & (0.111) & (0.034) \\
+Day 1 & 0.2791*** & 0.3379*** & 0.2724** & 0.3567*** & 0.207 & 0.3064*** \\
+ & (0.097) & (0.061) & (0.116) & (0.058) & (0.126) & (0.0561) \\
+Day -2 $\times$ Passive & -1.5355*** & -2.2602*** & -0.7154 & -1.7024*** & -0.6321 & -1.8279*** \\
+ & (0.378) & (0.371) & (0.469) & (0.329) & (0.553) & (0.291) \\
+Day 0 $\times$ Passive & 3.5733*** & 3.3163*** & 2.6430*** & 2.2866*** & 1.5906*** & 1.1496*** \\
+ & (0.643) & (0.485) & (0.618) & (0.391) & (0.612) & (0.351) \\
+Day 1 $\times$ Passive & 1.7811** & 1.7712*** & 3.3009*** & 3.2858*** & 2.4176*** & 2.3515*** \\
+ & (0.6995) & (0.561) & (0.7829) & (0.562) & (0.815) & (0.556) \\
+\midrule
+Sector Controls & Yes & No & Yes & No & Yes & No \\
+Fixed Effects & No & Yes & No & Yes & No & Yes \\
+\midrule
+Observations & 328,958 & 328,958 & 328,958 & 328,958 & 328,958 & 328,958 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item Notes: Standard errors in parentheses. * p$<$0.10, ** p$<$0.05, *** p$<$0.01.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{First Stage Regression}
+\begin{tabular}{lc}
+\toprule
+& Share Passive \\
+\midrule
+In S\&P 500 & 0.197*** \\
+& (0.001) \\
+\midrule
+Sector Controls & Yes \\
+\midrule
+Observations & 328,958 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Second Stage Event Study}
+\label{tab:reg_results}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & 3 Day Volatility
+ & 5 Day Volatility
+ & 7 Day Volatility \\
+\cmidrule(lr){2-2}\cmidrule(lr){3-3}\cmidrule(lr){4-4}
+ & (1) & (2) & (3) \\
+\midrule
+$\widehat{\text{Passive Share}}$ & 9.7995*** & 9.8503*** & 11.961**  \\
+ & (2.444) & (3.204) & (4.832) \\
+Day -2 & 0.4118*** & 0.3841*** & 0.3855*** \\
+ & (0.109) & (0.107) & (0.098) \\
+Day 0 & -0.0171 & -0.0105 & 0.1319 \\
+ & (0.188) & (0.158) & (0.131) \\
+Day 1 & 0.2938 & -0.1563 & -0.0946 \\
+ & (0.181) & (0.219) & (0.243)  \\
+Day -2 $\times$ $\widehat{\text{Passive}}$ & -5.1294*** & -4.2248*** & -4.4625*** \\
+ & (0.949) & (0.911) & (0.829) \\
+Day 0 $\times$ $\widehat{\text{Passive}}$ & 6.1973*** & 4.4778*** & 1.9168* \\
+ & (1.534) & (1.289) & (1.085) \\
+Day 1 $\times$ $\widehat{\text{Passive}}$ & 2.1432 & 7.007*** & 5.2577*** \\
+ & (1.495) & (1.801) & (1.995) \\
+\midrule
+Sector Controls & No & No & No \\
+Fixed Effects & Yes & Yes & Yes \\
+\midrule
+Observations & 328,958 & 328,958 & 328,958 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item Notes: Standard errors in parentheses. * p$<$0.10, ** p$<$0.05, *** p$<$0.01.
+\end{tablenotes}
+\end{threeparttable}
 \end{table}
 
 \end{document}
