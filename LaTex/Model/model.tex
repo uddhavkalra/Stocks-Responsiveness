@@ -14,7 +14,7 @@ In order to analyse the effect of passive ownership on volatility around earning
 \text{Volatility}_{i,t} = \delta \text{Passive}_{i,t} + \sum_{k \neq -1} \beta_k D_{i,k} + \sum_{k \neq -1} \gamma_k D_{i,k} \times \text{Passive}_{i} + \mathbb{X}_{i,t} \Theta + \alpha_i + \epsilon_{i,t}
 \end{equation*}
 
-Where, the unit $i$ is a stock on day $t$, volatility is either 3, 5 or 7 day volatility. Passive is the share of a stock passively held. $D_{i,t}$ is a dummy variable equal to 1 at time $t$. $\mathbb{X}$ are controls such as total assets, revenue, volume traded and earnings per share as they are correlated to volatility around earnings dates. $\alpha_i$ are entity fixed effects, which are included to absorb time invariant firm characteristics not included in the controls.
+Where, the unit $i$ is a stock on day $t$, $\text{Volatility}_{i,t}$ is either 3, 5 or 7 day volatility. $\text{Passive}_{i,t}$ is the share of a stock passively held. $D_{i,t}$ is a dummy variable equal to 1 at time $t$. $\mathbb{X}$ are controls such as total assets, revenue, volume traded and earnings per share as they are correlated to volatility around earnings dates. $\alpha_i$ are entity fixed effects, which are included to absorb time invariant firm characteristics not included in the controls.
 
 It is important to note that the variable Passive is quarterly, so it does not change day to day. This is also the case for some of the control variables.
 

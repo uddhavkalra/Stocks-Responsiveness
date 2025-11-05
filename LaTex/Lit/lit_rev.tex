@@ -1,0 +1,32 @@
+\documentclass[/Users/uddhav/Desktop/MA Thesis/Stocks-Responsiveness/LaTex/master_file.tex]{article}
+\usepackage[a4paper, margin=0.75in]{geometry}
+\usepackage{setspace}    
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}          
+\usepackage{mathtools}    
+\usepackage{bm}             
+\usepackage{dsfont}          
+\usepackage{nicefrac}  
+\usepackage{hyperref}    
+
+\begin{document}
+
+Haddad, Huebner and Loualiche (2024) develop a model that shows the impact of passive investing on stock prices. The authors' primary mechanism operates through the elasticity of demand. They model the individual investor's decision through their demand and their degree of aggressiveness (their elasticity) and then aggregate the investors to reach market equilibrium conditions. 
+
+The model shows that as the share of passive investors increases, aggregate elasticity declines if investors are sensitive to market conditions. Their model further shows that a reduction in elasticity leads to more unstable prices. 
+
+Kyle (1985) provides a theoretical framework for volatility as a proxy for price informativeness. The author provides a sequential equilibrium model and argues that constant volatility reflects the fact that information is incorporated into prices at a constant rate. 
+
+Building on this theoretical foundation, several empirical studies have attempted to measure passive ownership and assess its impact on price informativeness, employing different identification strategies and proxies.
+
+Empirical identification of passive ownership varies across studies. Moltke \& Sl\o k (2024) provide extensive descriptive evidence on passive investing and adopt a measurement of passive investing that differs from mine. Using 13F filings, the authors compute the elasticity of demand of stocks for each fund and if the value is sufficiently close to 0, they flag the fund as a passive investor. This approach has the advantage that it flags funds that are, in practice, passive even if they don't self-identify as passive investors. A key limitation is that 13F filings do not distinguish between funds owned by the same filing manager. This leads to problems where one owner may simultaneously operate one fund that follows the index and another that actively trades, but both are aggregated under a single 13F report.
+
+Samson (2024) investigates the effect of passive ownership on price informativeness. The author's measure of passive investing is the one I employ. However, Samson (2024) uses data from 1990 to 2019, whereas from Figures 1 and 2, it is evident that from 2023 to 2025, the share of passive investing has sharply increased. Samson (2024) in their sample find a negative causal relationship between passive ownership and price informativeness; however, they do not employ volatility as a proxy for price informativeness. They use the price jump measure proposed by Weller (2018).
+
+Overall, the empirical literature around passive ownership and price informativeness has been mixed. Buss \& Sundaresan (2020) find that passive ownership positively affects information efficiency. They argue that due to passive investors' inelastic demand, the firm's cost of capital is reduced, allowing it to take on more risk. This would lead to higher cash flow variance, which in turn incentivises active investors to acquire more precise information. Bennett, Stulz \& Wang (2020), find that inclusion in the S\&P 500 negatively impacts price informativeness. Since the S\&P 500 is the largest index, the authors argue that the channel is through passive investing. Coles, Heath \& Ringgenberg (2022) find no effect of passive ownership on price informativeness.
+
+This paper contributes to this mixed literature by using a different measure of price informativeness and using earnings announcements to abstract away from any structural model.
+
+\end{document}
